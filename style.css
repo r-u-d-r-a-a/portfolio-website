@@ -48,7 +48,7 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1, h2, h4, p {
   margin: 0;
 }
 
@@ -203,6 +203,128 @@ img {
   border-radius: 0.5rem;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.flex-container > div {
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  height: 75px; 
+  margin: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 30px;
+}
+
+.skill-title {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #BEB0E4;
+}
+
+.timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+}
+
+.timeline .timeline-container .timeline-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 
+.timeline .timeline-container .timeline-body {
+  background: #BEB0E4;
+  border-radius: 5px;
+  padding: 20px 20px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-container .timeline-body:before {
+  content: '';
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  background: #BEB0E4;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+.timeline .timeline-container.primary .badge
+  {
+  background: var(--first-color) !important;
+}
+
+.timeline .timeline-container.danger .badge {
+  background: var(--first-color) !important;
+}
+
+.work__container {
+  row-gap: 2rem;
+}
+.work__img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.work__img p {
+  transition: 1s;
+  padding: 1rem;
+}
 
