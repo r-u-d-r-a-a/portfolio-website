@@ -1,27 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  /* ------------------------- */
-  --header-height: 3rem;
-  --font-semi: 600;
-
   --first-color: #6e07f3;
   --second-color: #141c3a;
 
-  --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --smaller-font-size: 0.75rem;
 
-  /* ------------------------- */
-  --mb-2: 1rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-
-  --z-back: -10;
-  --z-fixed: 100;
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -201,7 +188,7 @@ img {
   align-items: center;
 }
 .about__subtitle {
-  margin-bottom: var(--mb-2);
+  margin-bottom: 1rem;
 }
 .about__img {
   justify-self: center;
@@ -342,20 +329,20 @@ img {
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
-  font-weight: var(--font-semi);
+  font-weight: 600;
   padding: 2rem 0;
 }
 .footer__title {
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  margin-bottom: 2rem;
 }
 .footer__social {
-  margin-bottom: var(--mb-4);
+  margin-bottom: 2rem;
 }
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2);
+  margin: 0 1rem;
 }
 .footer__copy {
   font-size: var(--smaller-font-size);
@@ -410,21 +397,21 @@ img {
     padding-bottom: 3rem;
   }
   .section-title {
-    margin-bottom: var(--mb-6);
+    margin-bottom: 3rem;
   }
   .section-title::after {
     width: 80px;
     top: 3rem;
   }
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: 4.5rem;
   }
   .nav__list {
     display: flex;
     padding-top: 0;
   }
   .nav__item {
-    margin-left: var(--mb-6);
+    margin-left: 3rem;
     margin-bottom: 0;
   }
   .nav__toggle {
