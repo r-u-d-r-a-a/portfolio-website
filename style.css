@@ -476,3 +476,9 @@ img {
   }
 }
 
+.confetti-button {
+ 
+  cursor: pointer;
+  border: none;
+ 
+}

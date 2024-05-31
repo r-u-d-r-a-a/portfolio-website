@@ -42,3 +42,15 @@ const scrollActive = () =>{
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+function confetti()
+{
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+}
+
+document.getElementById('confettiButton').addEventListener('click', confetti);
+

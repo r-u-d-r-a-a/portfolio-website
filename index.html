@@ -13,7 +13,7 @@
 
     <title>Rudra</title>
   </head>
-  <body>
+  <body onload="confetti()" >
     <header class="header">
       <nav class="nav bd-grid">
         <div>
@@ -29,11 +29,17 @@
               <a href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
+                <a href="#education" class="nav__link">Education</a>
+              </li>
+            <li class="nav__item">
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
               <a href="#experience" class="nav__link">Experience</a>
             </li>
+            <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
           </ul>
         </div>
 
@@ -50,7 +56,7 @@
 
       <div class="about__container ">
         <div class="about__img">
-          <img src="assets/ru.png" alt="" />
+          <img class="confetti-button" id="confettiButton" src="assets/ru.png" alt="" />
         </div>
       </div>
     </section>
@@ -61,10 +67,7 @@
       <div class="about__container bd-grid">
         <div>
           <p class="about__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-            cum in dolorum numquam quod commodi officiis pariatur obcaecati at
-            consectetur, rerum, soluta harum ullam ratione doloribus repellendus
-            vel, dolore exercitationem?
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, esse! 
           </p>
         </div>
       </div>
@@ -191,8 +194,8 @@
 
       </section>
 
-      <section class="project section" id="project">
-        <h2 class="section-title">Project</h2>
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
 
         <div class="work__container bd-grid">
             <a class="work__img">
@@ -229,5 +232,6 @@
 
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
   </body>
 </html>
