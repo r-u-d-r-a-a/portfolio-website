@@ -240,6 +240,14 @@ img {
   color: white;
 }
 
+.timeline  a{
+  position: relative;
+  /* padding-left: 4rem;
+  margin: 0 0 0 30px; */
+  color: white;
+  text-decoration: underline;
+}
+
 .timeline:before {
   content: "";
   position: absolute;
@@ -320,11 +328,43 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  
 }
-.work__img p {
+
+.work__img .tech{
+  color: var(--first-color);
+  padding:1rem;
+}
+
+.work__img p, ol{
   transition: 1s;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
+
+.work__img .text{
+
+  transition: 1s;
+  /* padding-top: 1rem; */
+  padding-left: 1rem;
+
+}
+
+.work__img h3{
+  transition: 1s;
+  /* padding-top: 1rem; */
+  padding-left: 1rem;
+  padding-bottom: none;
+}
+
+.work__img h5{
+  transition: 1s;
+  padding-top: none;
+  padding-left: 1rem;
+  color: var(--first-color);
+}
+
 
 .footer {
   background-color: var(--second-color);
