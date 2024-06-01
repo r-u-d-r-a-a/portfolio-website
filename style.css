@@ -198,6 +198,7 @@ img {
   border-radius: 0.5rem;
 }
 
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +378,11 @@ img {
     justify-content: center;
     align-items: center;
   }
+
+  .about__text{
+    text-align: center;
+  }
+
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
